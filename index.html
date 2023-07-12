@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram</title>
     <link rel="stylesheet" href="input.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
 
     <div class="container mx-auto flex justify-center items-center mt-24">
-        <div class="left">
-            <img class="bg-white"  src="images/img2.jpg" alt="instaclone">
+        <div class="left bg-white w-72">
+            <img class="h-96" src="images/img2.jpg" alt="instaclone">
         </div>
-        <div class="right">
-            <input type="text" placeholder="Phone number username or email">
-            <input type="text"  placeholder="Password">
-            <button>Log in</button>
+        <div class="right flex flex-col mx-8 justify-center items-center bg-white ">
+            <h2 class="font-custom text-4xl mb-10">Instagram</h2>
+            <input class="my-2 bg-gray-100 border border-gray-400 text-center w-80 py-2 rounded-sm" type="text"
+                placeholder="Phone number username or email">
+            <input class="my-2 bg-gray-100 border border-gray-400 text-center w-80 py-2 rounded-sm"
+                placeholder="Password">
+            <button class="bg-blue-500 my-2 w-80 py-1 rounded-lg text-white">Log in</button>
+            
+            <!-- <h2 class="relative before: h-1 w-10 bg-black absolute block after:h-2 w-7 absolute block">OR</h2>-->
+
+            <div class="relative w-64 text-center">
+
+                <div class="absolute left-4 top-3 block h-0.5 w-24 bg-gray-200"></div>
+                <div class="text-gray-600 text-xm">OR</div>
+                <div class="absolute right-4 top-3 block h-0.5 w-24 bg-gray-200"></div>
+            </div>
+             
+            <div class="flex">
+                <img  class="w-5 h-5 mt-7 mr-3" src="images/fb-logo.png" alt="facebooklogo">
+            <p class="my-6 text-center text-blue-900">Log in with Facebook</p>
+
+        </div>
 
         </div>
     </div>
-    
+
 </body>
+
 </html>
